@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Performance</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://img.icons8.com/ios/20/home.png" width="30" height="30" class="d-inline-block align-top"
+            alt="">
+          Home
+        </a>
+        <a class="navbar-brand" href="about.html">
+          <img src="https://img.icons8.com/ios-glyphs/20/about-us-male.png" width="30" height="30"
+            class="d-inline-block align-top" alt="">
+          About Us
+        </a>
+        <a class="navbar-brand" href="dashboard.html">
+          <img src="https://img.icons8.com/material-outlined/20/dashboard-layout.png" width="30" height="30"
+            class="d-inline-block align-top" alt="">
+          Dashboard
+        </a>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn"> <img
+                src="https://img.icons8.com/external-anggara-detail-outline-anggara-putra/40/external-profile-office-anggara-detail-outline-anggara-putra.png"
+                alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">MyProfile</a>
+              <a href="#">Settings</a>
+              <a href="#">Help</a>
+              <a href="logout.php">Logout</a>
+            </div>
+          </div>
+        </li>
+      </nav>
+      </header>
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+      "width=device-width, initial-scale=1.0">
+    <title>Pie Chart</title>
+    <link rel="stylesheet" href="perf.css">
+</head>
+<body>
+  <div class="hero-content">
+    <h1>Pie Chart</h1>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['DLCA',     11],
+        ['CG',      2],
+        ['DSGT',  2],
+        ['MATH', 2],
+        ['OOP',    7]
+      ]);
+
+      var options = {
+        title: 'My Performance'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="piechart" style="width: 900px; height: 500px;"></div>
+</body>
+</body>
+</html>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="permissionbutton">
+        <button class="btn" id="myBtn2"> Input Marks </button>
+    <script>
+      document.getElementById("myBtn2").addEventListener("click", myFunction);
+      function myFunction() {
+        window.location.href="form.php";
+      }
+    </script>
+    </div>
+    <footer>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/material-sharp/20/contact-card.png" alt=""></a>: 7977318761</p>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/ios/20/new-post.png" alt=""></a>: xyz@gmail.com</p>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/arcade/20/experimental-marker-arcade.png" alt=""></a>: Mumbai, India</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://img.icons8.com/ios/20/home.png" width="30" height="30" class="d-inline-block align-top"
+          alt="">
+        Home
+      </a>
+      <a class="navbar-brand" href="about.html">
+        <img src="https://img.icons8.com/ios-glyphs/20/about-us-male.png" width="30" height="30"
+          class="d-inline-block align-top" alt="">
+        About Us
+      </a>
+      <a class="navbar-brand" href="dashboard.html">
+        <img src="https://img.icons8.com/material-outlined/20/dashboard-layout.png" width="30" height="30"
+          class="d-inline-block align-top" alt="">
+        Dashboard
+      </a>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"> <img
+              src="https://img.icons8.com/external-anggara-detail-outline-anggara-putra/40/external-profile-office-anggara-detail-outline-anggara-putra.png"
+              alt="">
+          </button>
+          <div class="dropdown-content">
+            <a href="#">MyProfile</a>
+            <a href="#">Settings</a>
+            <a href="#">Help</a>
+            <a href="logout.php">Logout</a>
+          </div>
+        </div>
+      </li>
+    </nav>
+</header>
+     <h1>About Us</h1>
+     <br>
+     <div class="slideshow-container">
+     
+     <div class="mySlides fade">
+       <h2>Schedule your daily planner!</h2>
+       <img src="schedule.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     <div class="mySlides fade">
+       <h2>Learn More!</h2>
+       <img src="learn.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     <div class="mySlides fade">
+       <h2>See your improvement!</h2>
+       <img src="progress.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     </div>
+     <br>
+     
+     <div style="text-align:center">
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+     </div>
+     <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <br>
+    <footer>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/material-sharp/20/contact-card.png" alt=""></a>: 7977318761</p>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/ios/20/new-post.png" alt=""></a>: xyz@gmail.com</p>
+        <p class="text-center"><a href="#"><img src="https://img.icons8.com/arcade/20/experimental-marker-arcade.png" alt=""></a>: Mumbai, India</p>
+    </footer>
+</body>
+</html>

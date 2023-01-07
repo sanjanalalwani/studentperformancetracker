@@ -1,0 +1,236 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #f6fbff;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 72px;
+  background-color: rgb(193, 225, 255);
+}
+nav ul {
+position: absolute;
+left: 300px;
+height: 90px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+nav ul li {
+top: 60px;
+list-style: none;
+padding: 0 40px;
+}
+nav ul li a {
+font-family: 'Ubuntu', sans-serif;
+color: white;
+text-decoration: none;
+}
+nav ul li a:hover {
+border: 0px;
+border-radius: 50px;
+color: thistle;
+}
+/* Dropdown Button */
+.dropbtn {
+position: absolute;
+top: 4px;
+left: 286px;
+background-color: transparent;
+color: white;
+padding: 11px;
+font-size: 16px;
+border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+left: 750px;
+top: -35px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+border: 0px;
+border-radius: 5px;
+display: none;
+position: absolute;
+top: 40px;
+left: 332px;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+background-color: transparent;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #b56b6b;
+}
+
+#header {
+  padding: 10px;
+  color: #000000;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color:#ffffff;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  color: #000000;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color:#7571b5;
+  margin: 5px;
+  box-shadow: 0px 0px 3px rgb(55, 57, 121);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: rgb(247, 246, 247);
+}
+
+.day + #currentDay {
+  background-color:#e5f3fb;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #eaf0f2;
+  color: rgb(21, 18, 18);
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color:rgb(236, 235, 237) !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: rgb(155, 157, 209);
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #ffffff;
+ 
+}
+#saveButton, #closeButton {
+  background-color: #ffffff;
+ 
+}
+#eventText {
+  font-size: 14px;
+}
+ #modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+.btn{
+  position: absolute;
+  top: 834px;
+  left: 440px;
+  cursor:pointer;
+  display:inline-block;
+  width:40%;
+  background: rgb(68, 59, 74);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+.btn:focus{
+  outline:0;
+}
+.btn:active{
+  transform:scale(0.98);
+}
+footer{
+text-align: center;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
